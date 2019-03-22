@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="src" />
+    </declare-styleable>
+    
+    <declare-styleable name="RoundImageView">
+        <attr name="src" />
+    </declare-styleable>
+    <declare-styleable name="BannerView">
+        <attr name="title_text" format="string" />
+        <attr name="back_layout_gone" format="boolean" />
+        <attr name="divider_gone" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MineListItemView">
+        <attr name="item_other" format="string" />
+        <attr name="item_desc" format="string" />
+        <attr name="drawable" format="reference|color" />
+        <attr name="item_right" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CirclePageIndicator">
+        <attr name="radius" format="dimension" />
+        <attr name="space" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="BottomDrawerLayout">
+        <attr name="defaultNum" format="integer"/>
+        <attr name="reverse" format="boolean"/>
+        <attr name="draggable" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ExpandedRadioGroup">
+        <attr name="checkedButton" format="integer"/>
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="BannerViewPager">
+        <attr name="repeatMode" format="enum">
+            <enum name="restart" value="0"/>
+            <enum name="reverse" value="1"/>
+            <enum name="round" value="2"/>
+        </attr>
+        <attr name="flipping" format="boolean" />
+        <attr name="flipInterval" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="SheetBehavior_Layout">
+        <attr name="sheet_anchor" format="integer"/>
+        <attr name="sheet_peekHeight" format="dimension"/>
+        <attr name="sheet_hideable" format="boolean"/>
+        <attr name="sheet_skipCollapsed" format="boolean"/>
+        <attr name="sheet_elevationWithAnchor" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MaxHeightNestedScrollView">
+        <attr name="maxLayHeight" format="dimension|fraction" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiStateView">
+        <attr name="msv_contentViewId" format="reference" />
+        <attr name="msv_loadingView" format="reference" />
+        <attr name="msv_emptyView" format="reference" />
+        <attr name="msv_errorView" format="reference" />
+        <attr name="msv_viewState" format="enum">
+            <enum name="content" value="0" />
+            <enum name="error" value="1" />
+            <enum name="empty" value="2" />
+            <enum name="loading" value="3" />
+        </attr>
+        <attr name="msv_animateViewChanges" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightView">
+        <attr name="mhv_HeightRatio" format="reference|float" />
+        <attr name="mhv_HeightDimen" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="allStarsCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="curSelectValue" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

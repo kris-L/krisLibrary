@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/banner_bg">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:lines="1"
+        android:textColor="@color/banner_text_color"
+        android:textSize="18sp"
+        tools:text="标题" />
+    <!--android:layout_toEndOf="@id/lay_back"-->
+    <!--android:layout_toRightOf="@id/lay_back"-->
+    <!--android:layout_toLeftOf="@+id/view_banner_lay_right"-->
+    <!--android:layout_toStartOf="@+id/view_banner_lay_right"-->
+
+    <RelativeLayout
+        android:id="@+id/lay_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_view_selector_default"
+        android:paddingEnd="8dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="8dp"
+        android:paddingStart="14dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/banner_back" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/iv_back"
+            android:layout_toRightOf="@+id/iv_back"
+            android:textColor="@color/banner_text_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_banner_lay_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:minWidth="40dp">
+
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/custom_view_selector_default"
+            android:gravity="center"
+            android:paddingEnd="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="12dp"
+            android:paddingStart="8dp"
+            android:textColor="@color/banner_text_color"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            tools:text="功能" />
+
+        <LinearLayout
+            android:id="@+id/banner_view_lay_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/custom_view_selector_default"
+            android:gravity="center"
+            android:paddingEnd="14dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="14dp"
+            android:paddingStart="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/banner_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_dd" />
+</RelativeLayout>

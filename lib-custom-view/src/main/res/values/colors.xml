@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_BB">#BBBBBB</color>
+    <color name="gray_dd">#dddddd</color>
+    <color name="gray_ee">#eeeeee</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="banner_bg">#dc4391e1</color>
+    <color name="banner_text_color">#F7F7F7</color>
+    <color name="blue">#dc4391e1</color>
+    <drawable name="banner_back">@drawable/custom_ic_back</drawable>
+</resources>

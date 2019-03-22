@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        //minSdkVersion 15
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.deps.appcompatV7
+    implementation rootProject.ext.deps.recyclerviewV7
+    implementation rootProject.ext.deps.design
+    implementation rootProject.ext.deps.annotations
+
+    // 下拉刷新上拉加载控件，https://github.com/lcodecorex/TwinklingRefreshLayout
+    api 'com.lcodecorex:tkrefreshlayout:1.0.7'
+}

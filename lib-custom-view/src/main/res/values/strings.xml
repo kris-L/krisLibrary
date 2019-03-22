@@ -1,0 +1,3 @@
+<resources>
+    <string name="top_sheet_behavior" translatable="false">com.xw.lib.custom.view.behavior.TopSheetBehavior</string>
+</resources>
