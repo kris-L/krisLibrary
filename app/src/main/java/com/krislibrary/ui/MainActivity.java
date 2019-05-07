@@ -1,7 +1,9 @@
-package com.krislibrary;
+package com.krislibrary.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.krislibrary.R;
 
 public class MainActivity extends AppCompatActivity {
 
